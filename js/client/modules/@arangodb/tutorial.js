@@ -156,7 +156,10 @@ var lessons = [
            "database and all of its collections, use '_dropDatabase':\n\n" +
            "  db._createDatabase(\"mydb\");\n" +
            "  db._useDatabase(\"mydb\");\n" +
-           "  db._dropDatabase(\"mydb\");"
+           "  db._useDatabase(\"_system\");\n" +
+           "  db._dropDatabase(\"mydb\");\n" +
+           "Note: dropping databases is only possible from within the _system database. The _system " +
+           "database itself cannot be dropped."
   }
 ];
 
